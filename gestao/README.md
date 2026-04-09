@@ -14,116 +14,101 @@ Muitas pequenas empresas não possuem sistemas adequados de segurança da inform
 * Melhorar a proteção de dados sensíveis em 50% até o 6º mês
 
 **Justificativa:**
-A crescente digitalização das empresas exige maior segurança da informação. A falta de proteção adequada pode gerar prejuízos financeiros e danos à reputação.
+A crescente digitalização das empresas exige maior segurança da informação. A falta de proteção adequada pode gerar prejuízos financeiros, vazamento de dados e danos à reputação das empresas.
 
 ---
 
 ## 1.2 Estrutura Analítica do Projeto (EAP)
 
-* 1.0 Planejamento
+* 1.0 Planejamento  
+* 1.1 Definição do escopo  
+* 1.2 Levantamento de requisitos  
 
-* 1.1 Definição do escopo
+* 2.0 Desenvolvimento  
+* 2.1 Análise de dados (Python)  
+* 2.2 Implementação de segurança  
 
-* 1.2 Levantamento de requisitos
+* 3.0 Otimização  
+* 3.1 Modelagem matemática  
+* 3.2 Testes  
 
-* 2.0 Desenvolvimento
-
-* 2.1 Análise de dados (Python)
-
-* 2.2 Implementação de segurança
-
-* 3.0 Otimização
-
-* 3.1 Modelagem matemática
-
-* 3.2 Testes
-
-* 4.0 Finalização
-
-* 4.1 Ajustes finais
-
-* 4.2 Entrega do projeto
+* 4.0 Finalização  
+* 4.1 Ajustes finais  
+* 4.2 Entrega do projeto  
 
 ---
 
 ## 1.3 Matriz RACI
 
 | Atividade        | Responsável (R) | Aprovador (A) | Consultado (C) | Informado (I) |
-| ---------------- | --------------- | ------------- | -------------- | ------------- |
-| Planejamento     | Guilherme       | Guilherme     | -              | -             |
-| Análise de Dados | Guilherme       | Guilherme     | -              | -             |
-| Segurança        | Guilherme       | Guilherme     | -              | -             |
-| Otimização       | Guilherme       | Guilherme     | -              | -             |
+|------------------|----------------|--------------|---------------|--------------|
+| Planejamento     | Guilherme      | Guilherme    | -             | -            |
+| Análise de Dados | Guilherme      | Guilherme    | -             | -            |
+| Segurança        | Guilherme      | Guilherme    | -             | -            |
+| Otimização       | Guilherme      | Guilherme    | -             | -            |
+
+**Análise Crítica:**
+Por se tratar de um projeto individual, todas as responsabilidades estão centralizadas em um único integrante. Apesar disso, a utilização da matriz RACI contribui para a organização das atividades, clareza das responsabilidades e melhor controle do projeto.
 
 ---
 
-## 1.4 Cronograma (Gantt)
+## 1.4 Cronograma do Projeto (Gantt Simplificado)
 
-Cronograma do Projeto:
+| Atividades                              | Mês 1 | Mês 2 | Mês 3 | Mês 4 |
+|-----------------------------------------|:-----:|:-----:|:-----:|:-----:|
+| Planejamento e definição de escopo      |   X   |       |       |       |
+| Levantamento de requisitos              |   X   |       |       |       |
+| Coleta e análise de dados               |       |   X   |       |       |
+| Desenvolvimento de segurança            |       |       |   X   |       |
+| Modelagem e otimização                  |       |       |       |   X   |
+| Testes e validação                      |       |       |       |   X   |
+| Ajustes finais e entrega                |       |       |       |   X   |
 
-Mês 1: Planejamento e definição de requisitos
-Mês 2: Desenvolvimento da análise de dados (Python)
-Mês 3: Implementação da segurança da informação
-Mês 4: Modelagem de pesquisa operacional
-Mês 5: Testes, validações e ajustes
-Mês 6: Finalização e entrega do projeto
+**Análise Crítica:**
+O cronograma foi estruturado de forma sequencial, garantindo que cada etapa seja concluída antes do início da próxima. Isso reduz riscos de retrabalho e melhora o controle do projeto. A divisão em meses facilita o acompanhamento da evolução e cumprimento dos prazos.
 
 ---
 
 ## 1.5 Gestão de Custos
 
-Custos do Projeto:
+| Item                          | Quantidade | Valor Unitário | Total |
+|-------------------------------|-----------|---------------|-------|
+| Infraestrutura em nuvem       | 4 meses   | R$ 500,00     | R$ 2.000,00 |
+| Ferramentas de segurança      | 4 meses   | R$ 300,00     | R$ 1.200,00 |
+| Desenvolvimento (mão de obra) | 80 horas  | R$ 100,00     | R$ 8.000,00 |
+| Treinamento                   | 1         | R$ 1.500,00   | R$ 1.500,00 |
 
-Infraestrutura (Cloud): R$ 500,00
-Tempo de desenvolvimento: 100 horas x R$ 50,00 = R$ 5.000,00
+**Total Estimado: R$ 12.700,00**
 
-**Total estimado: R$ 5.500,00**
-
----
-
-## 1.6 Plano de Riscos
-
-Riscos Identificados:
-
-Risco 1: Atraso no desenvolvimento do projeto
-Probabilidade: Alta
-Impacto: Alto
-Mitigação: Planejamento detalhado e acompanhamento semanal
-
-Risco 2: Falhas técnicas no sistema
-Probabilidade: Média
-Impacto: Alto
-Mitigação: Testes contínuos e validações
-
-Risco 3: Estouro de custos
-Probabilidade: Média
-Impacto: Médio
-Mitigação: Controle de orçamento e revisão periódica
+**Análise Crítica:**
+Os custos foram estimados com base nos recursos necessários para desenvolvimento, infraestrutura e segurança. O maior investimento está concentrado na mão de obra, refletindo a importância do conhecimento técnico. Esse planejamento ajuda a evitar gastos inesperados e melhora a viabilidade do projeto.
 
 ---
 
-## 1.7 Plano de Comunicação
+## 1.6 Gestão de Riscos
 
-A comunicação será realizada por meio de reuniões semanais para acompanhamento do progresso.
-Será utilizado WhatsApp para comunicação rápida e alinhamentos diários.
-Relatórios de status serão elaborados semanalmente para monitoramento do andamento do projeto.
+| Risco                                      | Probabilidade | Impacto | Mitigação |
+|--------------------------------------------|--------------|--------|----------|
+| Atraso na coleta de dados                  | Alta         | Alto   | Definir prazos e acompanhamento contínuo |
+| Falhas de segurança no sistema             | Média        | Alto   | Implementar boas práticas e testes de segurança |
+| Erros humanos durante desenvolvimento      | Média        | Médio  | Revisões e validações constantes |
+| Estouro de custos                          | Baixa        | Médio  | Controle financeiro e planejamento |
 
----
-
-## 1.8 Gestão Ágil (Backlog)
-
-**Product Backlog:**
-
-* US-01: Implementar sistema de login seguro com autenticação
-* US-02: Desenvolver dashboard com indicadores (KPIs)
-* US-03: Criar sistema de monitoramento de segurança
-* US-04: Implementar análise de dados automatizada
-* US-05: Desenvolver modelo de otimização de recursos
+**Análise Crítica:**
+A identificação de riscos permite antecipar problemas e preparar soluções antes que impactem o projeto. O risco mais relevante é o atraso na coleta de dados, pois pode comprometer todas as etapas seguintes. A definição de estratégias de mitigação aumenta a segurança e previsibilidade do projeto.
 
 ---
 
-## Análise Crítica
+## 1.7 Backlog do Projeto
 
-Os custos estimados são compatíveis com a complexidade do projeto, considerando infraestrutura e tempo de desenvolvimento.
-A identificação de riscos permite antecipar problemas e garantir maior controle sobre o andamento do projeto.
-A utilização do backlog contribui para uma melhor organização das entregas, permitindo priorizar funcionalidades críticas e reduzir impactos de atrasos.
+| ID    | Funcionalidade                                      | Prioridade |
+|-------|-----------------------------------------------------|-----------|
+| US-01 | Implementar login com autenticação 2FA              | Alta      |
+| US-02 | Criar dashboard de segurança                        | Alta      |
+| US-03 | Implementar controle de acesso (RBAC)               | Alta      |
+| US-04 | Desenvolver análise de dados com Python             | Média     |
+| US-05 | Aplicar modelo de otimização matemática             | Média     |
+| US-06 | Implementar conformidade com LGPD                   | Alta      |
+
+**Análise Crítica:**
+O backlog organiza as funcionalidades por prioridade, garantindo que os elementos mais críticos sejam desenvolvidos primeiro. Isso melhora a eficiência do projeto e permite maior controle sobre o progresso das atividades.
