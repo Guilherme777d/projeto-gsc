@@ -1,93 +1,95 @@
-# 2. Análise de Dados (Python)
+# Análise de Dados
 
 ## 2.1 Coleta e Preparação de Dados (ETL)
 
-Nesta etapa, foi criada uma base de dados simulada para representar o funcionamento da empresa SecureTech Solutions. Os dados incluem informações sobre clientes, faturamento, horas gastas, custo por hora, tempo de resposta e status dos projetos.
+Nesta etapa, foi criada uma base de dados simulada para representar o funcionamento da empresa SecureTech Solutions. Os dados incluem informações sobre projetos realizados, horas trabalhadas, faturamento e tempo de resposta.
 
-O objetivo do ETL é organizar, limpar e preparar os dados para análise, removendo valores nulos e preenchendo informações necessárias para o cálculo dos indicadores de desempenho.
+O processo de ETL (Extract, Transform, Load) foi aplicado da seguinte forma:
 
-### Código Python
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
-# Criando base de dados simulada
-dados = {
-    'Cliente': ['Empresa A', 'Empresa B', 'Empresa C', 'Empresa D', 'Empresa E'],
-    'Faturamento': [12000, 18000, 15000, 20000, 17000],
-    'Horas_Gastas': [80, 120, 95, 140, 110],
-    'Custo_Hora': [50, 50, np.nan, 50, 50],
-    'Tempo_Resposta': [2.5, 3.0, 1.8, 4.2, 2.7],
-    'Status': ['Concluído', 'Concluído', 'Em andamento', 'Concluído', 'Em andamento']
-}
-
-df = pd.DataFrame(dados)
-
-# Limpeza de dados
-df.dropna(subset=['Faturamento', 'Horas_Gastas'], inplace=True)
-df['Custo_Hora'] = df['Custo_Hora'].fillna(50)
-
-print("Base de dados tratada:")
-print(df)
-```
+- Extract (Extração): criação de uma base simulada de projetos.
+- Transform (Transformação): organização dos dados em formato estruturado utilizando Python e Pandas.
+- Load (Carga): utilização dos dados para análise e geração de indicadores.
 
 ---
 
-## 2.2 Cálculo de Indicadores (KPIs)
+## 2.2 Base de Dados
 
-Foram definidos três indicadores principais para apoiar a tomada de decisão da empresa:
-
-* **Faturamento Total:** soma de todo o faturamento dos projetos
-* **Tempo Médio de Resposta:** média do tempo de resposta aos clientes
-* **Custo Médio por Projeto:** média do custo estimado de execução dos projetos
-
-### Código Python
-
-```python
-# KPIs
-faturamento_total = df['Faturamento'].sum()
-tempo_medio_resposta = df['Tempo_Resposta'].mean()
-custo_medio_projeto = (df['Horas_Gastas'] * df['Custo_Hora']).mean()
-
-print(f"Faturamento Total: R$ {faturamento_total:,.2f}")
-print(f"Tempo Médio de Resposta: {tempo_medio_resposta:.2f} horas")
-print(f"Custo Médio por Projeto: R$ {custo_medio_projeto:,.2f}")
-```
+| Projeto       | Horas | Faturamento (R$) | Tempo de Resposta (h) |
+|--------------|------|------------------|------------------------|
+| Firewall     | 120  | 12000            | 4.5                    |
+| Backup       | 80   | 9000             | 3.2                    |
+| Monitoramento| 150  | 18000            | 5.1                    |
+| Treinamento  | 60   | 5000             | 2.8                    |
+| Auditoria    | 90   | 10000            | 3.6                    |
 
 ---
 
-## 2.3 Visualização de Dados
+## 2.3 Análise com Python
 
-Os gráficos foram utilizados para mostrar a distribuição do faturamento e a relação entre horas gastas e faturamento.
+Foi utilizado Python com as bibliotecas Pandas e Matplotlib para processar os dados e gerar indicadores relevantes.
 
-### Código Python
+### Código utilizado
 
-```python
-# Gráfico 1: Faturamento por cliente
-plt.figure(figsize=(8, 5))
-plt.bar(df['Cliente'], df['Faturamento'])
-plt.title('Faturamento por Cliente')
-plt.xlabel('Cliente')
-plt.ylabel('Faturamento')
-plt.show()
+    import pandas as pd
+    import matplotlib.pyplot as plt
 
-# Gráfico 2: Horas Gastas x Faturamento
-plt.figure(figsize=(8, 5))
-plt.scatter(df['Horas_Gastas'], df['Faturamento'])
-plt.title('Relação entre Horas Gastas e Faturamento')
-plt.xlabel('Horas Gastas')
-plt.ylabel('Faturamento')
-plt.show()
-```
+    dados = {
+        "Projeto": ["Firewall", "Backup", "Monitoramento", "Treinamento", "Auditoria"],
+        "Horas": [120, 80, 150, 60, 90],
+        "Faturamento": [12000, 9000, 18000, 5000, 10000],
+        "Tempo_Resposta": [4.5, 3.2, 5.1, 2.8, 3.6]
+    }
+
+    df = pd.DataFrame(dados)
+
+    print("Base de dados:")
+    print(df)
+
+    print("\nIndicadores:")
+    print("Faturamento total:", df["Faturamento"].sum())
+    print("Horas totais:", df["Horas"].sum())
+    print("Tempo médio de resposta:", round(df["Tempo_Resposta"].mean(), 2))
+
+    plt.figure(figsize=(8, 5))
+    plt.bar(df["Projeto"], df["Faturamento"])
+    plt.title("Faturamento por Projeto")
+    plt.xlabel("Projeto")
+    plt.ylabel("Faturamento")
+    plt.xticks(rotation=15)
+    plt.tight_layout()
+    plt.savefig("dados/grafico_faturamento.png")
+    plt.show()
 
 ---
 
-## Análise Crítica
+## 2.4 Indicadores Gerados
 
-A análise dos dados mostra que a SecureTech Solutions possui variação relevante entre esforço operacional e retorno financeiro dos projetos. O faturamento total indica que a empresa possui boa capacidade de geração de receita, mas o tempo médio de resposta evidencia a necessidade de melhorar a agilidade no atendimento.
+- Faturamento total: R$ 54.000  
+- Horas totais: 500 horas  
+- Tempo médio de resposta: 3,84 horas  
 
-Além disso, a relação entre horas gastas e faturamento permite identificar que projetos mais demorados nem sempre representam proporcionalmente maior retorno, o que justifica a importância de acompanhar indicadores de desempenho e otimizar a alocação de recursos.
+---
 
-Esses dados reforçam a necessidade do projeto proposto, pois demonstram que a empresa precisa de melhor controle operacional, segurança e apoio analítico para tomar decisões mais estratégicas.
+## 2.5 Análise dos Resultados
+
+A análise dos dados demonstra que a empresa possui boa capacidade de geração de receita, com destaque para o serviço de Monitoramento, que apresenta o maior faturamento entre os projetos analisados.
+
+Por outro lado, esse mesmo serviço apresenta o maior tempo de resposta, indicando maior consumo de recursos operacionais.
+
+Além disso, observa-se que projetos com maior quantidade de horas nem sempre geram maior retorno financeiro, evidenciando a necessidade de otimização de processos.
+
+---
+
+## 2.6 Análise Crítica
+
+Os dados analisados indicam a necessidade de melhorar a eficiência operacional da empresa. Projetos mais longos devem ser reavaliados para garantir melhor relação entre custo e benefício.
+
+A identificação de padrões nos dados permite uma tomada de decisão mais estratégica, contribuindo para a redução de custos e melhoria da qualidade dos serviços.
+
+---
+
+## 2.7 Conclusão da Análise de Dados
+
+A utilização de análise de dados mostrou-se fundamental para compreender o desempenho da empresa, identificar gargalos e apoiar decisões estratégicas.
+
+Com o uso de ferramentas como Python, foi possível transformar dados em informações relevantes, contribuindo diretamente para a eficiência operacional e para a melhoria contínua dos serviços.
