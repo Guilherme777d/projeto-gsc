@@ -14,13 +14,13 @@ O processo de ETL (Extract, Transform, Load) foi aplicado da seguinte forma:
 
 ## 2.2 Base de Dados
 
-| Projeto       | Horas | Faturamento (R$) | Tempo de Resposta (h) |
-|--------------|------|------------------|------------------------|
-| Firewall     | 120  | 12000            | 4.5                    |
-| Backup       | 80   | 9000             | 3.2                    |
-| Monitoramento| 150  | 18000            | 5.1                    |
-| Treinamento  | 60   | 5000             | 2.8                    |
-| Auditoria    | 90   | 10000            | 3.6                    |
+| Projeto        | Horas | Faturamento (R$) | Tempo de Resposta (h) |
+|----------------|------:|-----------------:|----------------------:|
+| Firewall       |   120 |            12000 |                   4.5 |
+| Backup         |    80 |             9000 |                   3.2 |
+| Monitoramento  |   150 |            18000 |                   5.1 |
+| Treinamento    |    60 |             5000 |                   2.8 |
+| Auditoria      |    90 |            10000 |                   3.6 |
 
 ---
 
@@ -57,12 +57,22 @@ Foi utilizado Python com as bibliotecas Pandas e Matplotlib para processar os da
     plt.ylabel("Faturamento")
     plt.xticks(rotation=15)
     plt.tight_layout()
-    plt.savefig("dados/grafico_faturamento.png")
+    plt.savefig("grafico_faturamento.png")
     plt.show()
 
 ---
 
-## 2.4 Indicadores Gerados
+## 2.4 Visualização de Dados
+
+A seguir, apresenta-se o gráfico gerado a partir da análise dos dados:
+
+![Gráfico de Faturamento](grafico_faturamento.png)
+
+O gráfico demonstra a variação de faturamento entre os projetos, evidenciando diferenças no desempenho financeiro e auxiliando na tomada de decisão estratégica.
+
+---
+
+## 2.5 Indicadores Gerados
 
 - Faturamento total: R$ 54.000  
 - Horas totais: 500 horas  
@@ -70,7 +80,7 @@ Foi utilizado Python com as bibliotecas Pandas e Matplotlib para processar os da
 
 ---
 
-## 2.5 Análise dos Resultados
+## 2.6 Análise dos Resultados
 
 A análise dos dados demonstra que a empresa possui boa capacidade de geração de receita, com destaque para o serviço de Monitoramento, que apresenta o maior faturamento entre os projetos analisados.
 
@@ -80,7 +90,7 @@ Além disso, observa-se que projetos com maior quantidade de horas nem sempre ge
 
 ---
 
-## 2.6 Análise Crítica
+## 2.7 Análise Crítica
 
 Os dados analisados indicam a necessidade de melhorar a eficiência operacional da empresa. Projetos mais longos devem ser reavaliados para garantir melhor relação entre custo e benefício.
 
@@ -88,7 +98,7 @@ A identificação de padrões nos dados permite uma tomada de decisão mais estr
 
 ---
 
-## 2.7 Conclusão da Análise de Dados
+## 2.8 Conclusão da Análise de Dados
 
 A utilização de análise de dados mostrou-se fundamental para compreender o desempenho da empresa, identificar gargalos e apoiar decisões estratégicas.
 
