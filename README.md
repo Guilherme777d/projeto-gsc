@@ -1,47 +1,100 @@
 # Projeto Integrador - Segurança da Informação
 
-## Integrante
+## 👨‍💻 Integrante
 
 Guilherme Ferreira Neves
 
-## Nome da Empresa
+## 🏢 Nome da Empresa
 
 SecureTech Solutions
 
-## Ramo de Atuação
+## 💼 Ramo de Atuação
 
 Segurança da Informação
 
-## Problema
+---
 
-Muitas pequenas empresas não possuem segurança digital adequada, ficando vulneráveis a ataques, vazamento de dados e acessos indevidos.
+## 📌 Introdução
 
-## Solução
+A crescente digitalização das empresas tem aumentado significativamente a exposição a riscos cibernéticos, como invasões, vazamento de dados e ataques virtuais. Pequenas e médias empresas, em especial, muitas vezes não possuem estrutura adequada para se proteger dessas ameaças.
 
-A empresa oferece soluções de proteção digital, incluindo monitoramento, controle de acesso, criptografia e prevenção de ataques.
+Diante desse cenário, este projeto tem como objetivo analisar e propor soluções voltadas à segurança da informação, utilizando conceitos de gestão, análise de dados e otimização, proporcionando maior proteção e eficiência operacional.
 
 ---
 
-## Tecnologias Utilizadas
+## 🎯 Objetivos
 
-* Python (pandas, matplotlib)
-* GitHub
-* Conceitos de Segurança da Informação
-* Pesquisa Operacional (PuLP)
+### Objetivo Geral
+
+Desenvolver uma solução integrada de segurança da informação para pequenas empresas, utilizando técnicas de análise de dados e otimização.
+
+### Objetivos Específicos
+
+* Analisar dados operacionais e financeiros
+* Identificar vulnerabilidades e riscos
+* Propor melhorias na segurança digital
+* Otimizar processos e recursos da empresa
 
 ---
 
-## Estrutura do Projeto
+## 📊 Justificativa
 
-* **gestao** → planejamento do projeto
+A crescente exposição digital das empresas torna essencial o investimento em segurança da informação. A falta de proteção adequada pode resultar em prejuízos financeiros, perda de dados e danos à reputação.
+
+Assim, este projeto se justifica pela necessidade de aplicar soluções tecnológicas que garantam maior segurança, eficiência e tomada de decisão baseada em dados (Data Driven).
+
+---
+
+## ⚠️ Problema
+
+Muitas pequenas empresas não possuem sistemas adequados de segurança da informação, ficando vulneráveis a ataques cibernéticos, vazamento de dados e acessos indevidos.
+
+---
+
+## 💡 Solução
+
+A SecureTech Solutions oferece soluções completas de proteção digital, incluindo monitoramento de sistemas, controle de acesso, criptografia de dados e prevenção de ataques, garantindo maior segurança e confiabilidade.
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+O projeto está dividido nas seguintes áreas:
+
+* **gestao** → planejamento e organização do projeto
 * **dados** → análise de dados com Python
 * **seguranca** → proteção e segurança da informação
 * **otimizacao** → modelos de pesquisa operacional
 
 ---
 
-## Conclusão
+## 🔗 Integração das Áreas
 
-Este projeto integra gestão, análise de dados, segurança da informação e otimização matemática, permitindo uma visão completa e estratégica da empresa SecureTech Solutions.
+O projeto integra diferentes áreas da tecnologia da informação, onde:
 
-A utilização de técnicas de análise de dados e otimização contribui para a tomada de decisões mais eficientes, enquanto as práticas de segurança garantem a proteção das informações e a confiabilidade do sistema.
+* A **gestão** organiza o planejamento e execução
+* A **análise de dados** fornece indicadores para tomada de decisão
+* A **segurança da informação** protege sistemas e dados
+* A **otimização** melhora a eficiência operacional
+
+Essa integração permite uma visão estratégica completa e orientada a dados.
+
+---
+
+## 📈 Resultados
+
+Durante o desenvolvimento, foi realizada uma análise de dados utilizando Python, permitindo a geração de indicadores importantes e visualizações gráficas.
+
+O uso de gráficos facilita a interpretação dos dados e auxilia na tomada de decisões estratégicas dentro da empresa.
+
+---
+
+## 🧠 Conclusão Geral
+
+O projeto demonstrou a importância da integração entre gestão, análise de dados, segurança da informação e otimização, proporcionando uma abordagem completa para resolução de problemas empresariais.
+
+A utilização de uma abordagem baseada em dados (Data Driven) contribui para decisões mais assertivas, aumento da eficiência operacional e maior competitividade no mercado.
+
+Dessa forma, a SecureTech Solutions se apresenta como uma solução viável e estratégica para empresas que buscam segurança, inovação e crescimento sustentável.
+
+---
