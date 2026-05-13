@@ -3,7 +3,7 @@
 Nesta etapa, utilizámos **Python** e as bibliotecas **Pandas** e **Seaborn** para simular o comportamento de uma base de dados realista da **SecureTech Solutions**. O objetivo é transformar dados brutos em inteligência de negócio.
 
 > 💻 **Acesso ao Código-Fonte:** O código completo de extração, limpeza e geração dos gráficos está disponível no script oficial da nossa análise.
-> 👉 **[Clique aqui para visualizar ao script `analise_dados.py`](./analise_dados.py)**
+> 👉 **[Clique aqui para visualizar o script `analise_dados.py`](./analise_dados.py)**
 
 ---
 
@@ -14,7 +14,7 @@ Construímos um script que simula 200 chamados de contratos e implementações d
 O processo de **ETL (Extract, Transform, Load)** aplicado consistiu em:
 
 - **Extract (Extração):** Geração de um _DataFrame_ a simular a prestação de serviços como "Monitorização SOC", "Backup Cloud" e "Auditoria LGPD".
-- **Transform (Transformação e Limpeza):** \* **Tratamento de Nulos:** Valores financeiros ausentes foram preenchidos com a média ponderada do respetivo serviço.
+- **Transform (Transformação e Limpeza):** - **Tratamento de Nulos:** Valores financeiros ausentes foram preenchidos com a média ponderada do respetivo serviço.
   - **Remoção de Inconsistências:** Exclusão de linhas onde não houve resposta à pesquisa de satisfação do cliente (`dropna`).
   - **Formatação:** Conversão de tipos de dados numéricos para padronização analítica.
 - **Load (Carga):** O _DataFrame_ limpo foi utilizado para gerar as métricas finais.
@@ -25,9 +25,9 @@ O processo de **ETL (Extract, Transform, Load)** aplicado consistiu em:
 
 A partir da base de dados tratada, o nosso algoritmo calculou as seguintes métricas estratégicas, refletindo a realidade de uma consultoria focada em PMEs (Pequenas e Médias Empresas):
 
-1.  **Faturação Total Operacional:** `R$ 1.243.619,53`
-2.  **Ticket Médio por Serviço:** `R$ 6.218,09`
-3.  **Taxa de Projetos Atrasados:** `10.4%` (KPI Crítico de gestão de tempo).
+1. **Faturação Total Operacional:** `R$ 1,032,625.70`
+2. **Ticket Médio por Serviço:** `R$ 6,110.21`
+3. **Taxa de Projetos Atrasados:** `10.1%` (KPI Crítico de gestão de tempo).
 
 ---
 
@@ -39,19 +39,19 @@ Para responder a perguntas estratégicas da empresa, geramos painéis visuais fo
 
 Primeiro, avaliamos o volume e a saúde das entregas da empresa. O gráfico abaixo mostra como os 200 projetos simulados estão distribuídos:
 
-![Gráfico de Distribuição de Estado](./grafico_status.png)
+![Gráfico de Distribuição de Estado](./img/grafico_status.png)
 
 ### Eficiência Operacional (Esforço vs Retorno)
 
 O gráfico de dispersão ajuda-nos a entender a relação direta entre o esforço empregue (horas de trabalho da equipa) e o retorno financeiro gerado para a SecureTech, categorizando pelo estado do projeto. Projetos com muitas horas e baixa faturação exigem revisão de âmbito e otimização.
 
-![Gráfico de Dispersão - Faturação vs Horas](./grafico_dispersao.png)
+![Gráfico de Dispersão - Faturação vs Horas](./img/grafico_dispersao.png)
 
 ### Receita por Portefólio de Serviços
 
 Abaixo, visualizamos qual a categoria de serviço de cibersegurança que traz o maior volume de capital, o que orienta as decisões estratégicas e os próximos investimentos de marketing.
 
-![Gráfico de Faturação por Serviço](./grafico_faturamento_servico.png)
+![Gráfico de Faturação por Serviço](./img/grafico_faturamento_servico.png)
 
 ---
 
