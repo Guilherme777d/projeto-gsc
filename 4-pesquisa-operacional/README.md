@@ -33,7 +33,9 @@ $Z = 5000x_1 + 8000x_2$
 
 **Cenário:** Caso a disponibilidade da equipe técnica caia para 60h (ex: período de férias ou treinamentos), o modelo recalcula a prioridade para os contratos que trazem maior margem por hora trabalhada.
 
-- **Impacto:** A redução de 40% na capacidade técnica reduz o lucro máximo de R$ 160.000 para R$ 120.000, evidenciando a necessidade de automação de processos.
+- **Impacto Original:** 40 contratos SOC e 0 LGPD (Lucro de R$ 200.000,00).
+- **Novo Impacto:** 30 contratos SOC e 0 LGPD (Lucro de R$ 150.000,00).
+- **Conclusão:** A redução de 40 horas na capacidade técnica resulta em uma perda financeira direta de R$ 50.000,00 no faturamento máximo, evidenciando a necessidade de automação de processos para depender menos de horas manuais.
 
 ---
 
@@ -63,7 +65,7 @@ $C = 3500y_1 + 7500y_2$
 
 **Cenário:** Se o custo de mercado de um Analista Sênior aumentar para R$ 9.000, o modelo avalia se a composição da equipe deve ser alterada.
 
-- **Conclusão:** Mesmo com o aumento de custo, a restrição de qualidade (mínimo de 2 sêniores) mantém a estrutura, mas força a empresa a buscar maior produtividade dos juniores.
+- **Conclusão:** Mesmo com o aumento de custo, a restrição de qualidade (mínimo de 2 sêniores) mantém a estrutura base (3 juniores e 2 sêniores), mas acarreta um aumento de R$ 3.000,00 na folha salarial, forçando a empresa a buscar maior produtividade dos juniores.
 
 ---
 
