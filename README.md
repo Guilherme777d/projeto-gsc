@@ -1,15 +1,15 @@
 # Projeto em Gestão de Sistemas Computacionais
 
 ## 👨‍💻 Equipe do Projeto
-* Cauã Olivare Leandro - RA: 3025101217
-* Gabriel Marques Marchetto - RA: 3024202113
-* Guilherme Ferreira Neves - RA: 923107281
-* Gustavo Torres de Carvalho - RA: 3024105105
-* Lucas Adolpho Pereira - RA: 3023103948
-* Lucas de Campos Minhano - RA: 3025202704
-* Pedro Lopes Guimaraes - RA: 3024100918
-* Pedro Pereira Albuquerque Rodrigues - RA: 3023100294
-* Ricardo Barreto Barros Bonfim - RA: 3025101550
+* Cauã Olivare Leandro
+* Gabriel Marques Marchetto
+* Guilherme Ferreira Neves
+* Gustavo Torres de Carvalho
+* Lucas Adolpho Pereira
+* Lucas de Campos Minhano
+* Pedro Lopes Guimaraes
+* Pedro Pereira Albuquerque Rodrigues 
+* Ricardo Barreto Barros Bonfim
 
 ## 🏢 A Empresa (Estudo de Caso)
 **SecureTech Solutions**
